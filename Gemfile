@@ -10,7 +10,7 @@ source "https://rubygems.org"
 # Happy Jekylling!
 gem "jekyll", "~> 4.1"
 
-gem "jekyll-theme-hydejack", path: "./#jekyll-theme-hydejack"
+#gem "jekyll-theme-hydejack", path: "./#jekyll-theme-hydejack"
 
 gem "github-pages", group: :jekyll_plugins
 
