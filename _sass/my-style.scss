@@ -1,0 +1,81 @@
+* {
+  cursor: url('/assets/img/cursor.png'), default;
+}
+
+.dl-table {
+  a {
+    @supports ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      text-underline-offset: .8rem;
+    }
+    @supports not ((text-decoration-thickness: initial) and (text-underline-offset: initial)) {
+      padding-bottom: .45rem;
+    }
+  }
+
+  .btn, .gumroad-button  {
+    margin: 1rem 0;
+  }
+}
+
+html {
+    --font-family: none;
+    --font-family-heading: none;
+    --code-font-family: Fira Code, Menlo, Monaco, Consolas, monospace;
+    --body-color: #70389f;
+    --body-bg: rgb(236 169 203);
+    --border-color: #70389f;
+    --gray: #5d5364;
+    --gray-bg: rgba(0, 0, 0, 0.025);
+    --gray-text: #666;
+    --menu-text: #70389f;
+    --inv-body-color: #ccc;
+    --inv-body-bg: #282828;
+    --root-font-size: 15px;
+    --root-font-size-medium: 16px;
+    --root-font-size-large: 17px;
+    --root-font-size-print: 8pt;
+    --root-line-height: 1.75;
+    --font-weight: 400;
+    --font-weight-bold: 700;
+    --font-weight-heading: 700;
+    --content-width-5: 54rem;
+    --content-margin-5: 4rem;
+    --sidebar-width: 21rem;
+    --half-content: 31rem;
+    --break-point-3: 64em;
+    --break-point-5: 86em;
+    --break-point-dynamic: 1664px;
+}
+
+body .highlight .c, body .highlight .c1, body .highlight .cm, body .highlight .cp, body .highlight .cs {
+  color: #672268;
+}
+
+body .highlight .l, body .highlight .ld, body .highlight .s, body .highlight .s1, body .highlight .s2, body .highlight .sb, body .highlight .sc, body .highlight .sd, body .highlight .se, body .highlight .sh, body .highlight .si, body .highlight .sx {
+  color: #175016;
+}
+
+// Fancy Codeblock Scrollbar
+
+pre {
+  border-color: transparent;
+  transition: border-color 0.5s ease;
+
+  &::-webkit-scrollbar {
+    height: 8px;
+    width: auto;
+  }
+
+  &:hover {
+    border-color: var(--gray);
+    transition: border-color 0.2s ease;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-color: inherit;
+    border-radius: 10px;
+    border-right-style: inset;
+    border-right-width: calc(100vw + 100vh);
+  }
+}
